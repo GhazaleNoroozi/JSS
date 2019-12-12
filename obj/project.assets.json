@@ -2,6 +2,17 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "GeneticSharp/2.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/GeneticSharp.Domain.dll": {},
+          "lib/netstandard2.0/GeneticSharp.Infrastructure.Framework.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/GeneticSharp.Domain.dll": {},
+          "lib/netstandard2.0/GeneticSharp.Infrastructure.Framework.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -211,6 +222,21 @@
     }
   },
   "libraries": {
+    "GeneticSharp/2.6.0": {
+      "sha512": "mCloV8NtnKR/SYJViRKAH5zI/D/NrTf3kJIWFyAWelW++fbCHeCP/P/xCMaTVfaDnZD2FeYDohk17cRjWyBy/Q==",
+      "type": "package",
+      "path": "geneticsharp/2.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "geneticsharp.2.6.0.nupkg.sha512",
+        "geneticsharp.nuspec",
+        "lib/net462/GeneticSharp.Domain.dll",
+        "lib/net462/GeneticSharp.Infrastructure.Framework.dll",
+        "lib/netstandard2.0/GeneticSharp.Domain.dll",
+        "lib/netstandard2.0/GeneticSharp.Infrastructure.Framework.dll"
+      ]
+    },
     "Microsoft.NETCore.App/2.2.0": {
       "sha512": "7z5l8Jp324S8bU8+yyWeYHXUFYvKyiI5lqS1dXgTzOx1H69Qbf6df12kCKlNX45LpMfCMd4U3M6p7Rl5Zk7SLA==",
       "type": "package",
@@ -682,6 +708,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "GeneticSharp >= 2.6.0",
       "Microsoft.NETCore.App >= 2.2.0"
     ]
   },
@@ -724,6 +751,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "GeneticSharp": {
+            "target": "Package",
+            "version": "[2.6.0, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
