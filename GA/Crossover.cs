@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using GeneticSharp.Domain.Chromosomes;
 using GeneticSharp.Domain.Crossovers;
 
-namespace AlgorithmJSSP.GeneticAlgorithm
+namespace AlgorithmJSSP.GA
 {
     public class Crossover : ICrossover
     {

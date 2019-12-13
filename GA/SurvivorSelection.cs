@@ -3,11 +3,11 @@ using GeneticSharp.Domain.Chromosomes;
 using GeneticSharp.Domain.Populations;
 using GeneticSharp.Domain.Reinsertions;
 
-namespace AlgorithmJSSP.GeneticAlgorithm
+namespace AlgorithmJSSP.GA
 {
-    public class Selection : ReinsertionBase
+    public class SurvivorSelection : ReinsertionBase
     {
-        public Selection(bool canCollapse, bool canExpand) : base(canCollapse, canExpand)
+        public SurvivorSelection(bool canCollapse, bool canExpand) : base(canCollapse, canExpand)
         {
             throw new System.NotImplementedException();
         }

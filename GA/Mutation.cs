@@ -1,7 +1,7 @@
 using GeneticSharp.Domain.Chromosomes;
 using GeneticSharp.Domain.Mutations;
 
-namespace AlgorithmJSSP.GeneticAlgorithm
+namespace AlgorithmJSSP.GA
 {
     public class Mutation : MutationBase
     {

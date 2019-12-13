@@ -7,7 +7,7 @@ using GeneticSharp.Domain.Mutations;
 using GeneticSharp.Domain.Populations;
 using GeneticSharp.Domain.Randomizations;
 
-namespace AlgorithmJSSP.GeneticAlgorithm
+namespace AlgorithmJSSP.GA
 {
     public class OperatorsStrategy : IOperatorsStrategy
     {

@@ -1,7 +1,7 @@
 
 using GeneticSharp.Domain.Chromosomes;
 
-namespace AlgorithmJSSP.GeneticAlgorithm
+namespace AlgorithmJSSP.GA
 {
     public class Chromosome : ChromosomeBase
     {
