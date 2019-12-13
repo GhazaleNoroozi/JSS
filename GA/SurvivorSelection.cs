@@ -1,15 +1,22 @@
 using System.Collections.Generic;
-using GeneticSharp.Domain.Chromosomes;
+using GeneticSharp.Domain.Fitnesses;
+using GeneticSharp.Domain.Selections;
 using GeneticSharp.Domain.Populations;
+using GeneticSharp.Domain.Chromosomes;
 using GeneticSharp.Domain.Reinsertions;
 
 namespace AlgorithmJSSP.GA
 {
     public class SurvivorSelection : ReinsertionBase
     {
-        public SurvivorSelection(bool canCollapse, bool canExpand) : base(canCollapse, canExpand)
+
+        public ISelection Selection;
+        public IFitness Fitness;
+
+        public SurvivorSelection(ISelection eliteSelection, IFitness fitness) : base(true, true)
         {
-            throw new System.NotImplementedException();
+            this.Selection = eliteSelection;
+            this.Fitness = fitness;
         }
 
         protected override IList<IChromosome> PerformSelectChromosomes(IPopulation population, IList<IChromosome> offspring, IList<IChromosome> parents)

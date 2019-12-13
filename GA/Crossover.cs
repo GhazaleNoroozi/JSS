@@ -6,6 +6,7 @@ namespace AlgorithmJSSP.GA
 {
     public class Crossover : ICrossover
     {
+
         public int ParentsNumber => throw new System.NotImplementedException();
 
         public int ChildrenNumber => throw new System.NotImplementedException();
